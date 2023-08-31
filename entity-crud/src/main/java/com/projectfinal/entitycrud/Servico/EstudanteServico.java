@@ -12,8 +12,8 @@ import com.projectfinal.entitycrud.repositorio.EstudanteRepositorio;
 @Service
 public class EstudanteServico {
 	
-	@Autowired													//injecao de dependencia 
-	private EstudanteRepositorio estudanteRepositorio;			
+	@Autowired
+	private EstudanteRepositorio estudanteRepositorio;
 	
 	public Estudante criarEstudante(Estudante estudante) {
 		return estudanteRepositorio.save(estudante);
